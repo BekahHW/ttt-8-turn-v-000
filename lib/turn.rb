@@ -18,17 +18,17 @@ def input_to_index(user_input)
   index = user_input.to_i - 1
 end
 
-def move(board, index, current_player = "X")
-  board[index] == current_player
-end
+# def move(board, index, current_player = "X")
+#   board[index] == current_player
+# end
 
-def turn(board)
-  puts "Please enter 1-9:"
-  index = gets.strip
-  input_to_index(user_input)
-  if valid_move?(board, index)
-    move(board, index, current_player = "X")
-  else turn(board)
-    display_board(board)
-  end
-end
+# def turn(board)
+#   puts "Please enter 1-9:"
+#   index = gets.strip
+#   input_to_index(user_input)
+#   if valid_move?(board, index)
+#     move(board, index, current_player = "X")
+#   else turn(board)
+#     display_board(board)
+#   end
+# end
