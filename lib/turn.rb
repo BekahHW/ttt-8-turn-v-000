@@ -19,7 +19,9 @@ def input_to_index(user_input)
 end
 
 def move(board, index, current_player = "X")
+  if valid_move?(board, index)
   board[index] == current_player
+end
 end
 
 def turn(board)
