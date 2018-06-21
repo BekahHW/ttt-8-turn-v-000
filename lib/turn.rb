@@ -19,8 +19,8 @@ def input_to_index(user_input)
 end
 
 
-def move(board, index, token = "X")
-  board[index] == token
+def move(board, index, current_player = "X")
+  board[index] == current_player
 end
 
 def turn(board)
